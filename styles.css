@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    background-color: white;
+}
+
+header {
+    background-color: orange;
+    text-align: center;
+    padding: 25px 0;
+    position: fixed; /* Mantener fijo en la parte superior */
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    top: 0; /* Alinear en la parte superior */
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
+}
+
+nav {
+    display: inline-block;
+}
+
+/* Otros estilos para el menú */
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.encabezado-img {
+    background-image: url('img/muller_germany.png');
+    height: 25vh;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; /* Ajusta según el alto del menú para evitar solapamiento */
+}
+
+
+
+/*  ----------------------------------------------------------------------------------------------------------------------------CARRUSEL INICIO */
+.slider-frame {
+    overflow: hidden;
+}
+
+.slider-list {
+    display: flex;
+    transition: transform 16s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+@keyframes carrusel {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-300%); /* Ajusta el valor según la cantidad de imágenes */
+    }
+}
+
+/* Ajusta la duración total del carrusel y establece la animación */
+.slider-list {
+    animation: carrusel 32s infinite;
+}
+
+
+/*  ----------------------------------------------------------------------------------------------------------------------------LINEA DIVISORA */
+.linea-divisora {
+    width: 100%;
+    height: 1px;
+    background-color: white; /* Color de la línea */
+    margin: 20px 0; /* Ajusta el espacio entre la línea y los elementos adyacentes */
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------- INICIO DESCRIPCION */
+#inicio p {
+    font-size: 1.4rem; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea */
+    color: #333; /* Color del texto */
+    margin: 0 100px; /* Margen en la parte inferior del párrafo */
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#inicio h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: black;
+
+}
+
+#inicio .h2_inicio_des{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: black;
+
+}
+
+/* Otros estilos adicionales según tus preferencias */
+#inicio strong {
+    font-weight: bold; /* Texto en negrita */
+}
+
+#inicio em {
+    font-style: italic; /* Texto en cursiva */
+}
+
+#inicio a {
+    color: #0066cc; /* Color del enlace */
+    text-decoration: underline; /* Subrayado del enlace */
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------NOSOTROS SECCION */
+
+#nosotros h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+#nosotros .parrafo1 {
+    font-size: 1.4rem; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea */
+    color: #333; /* Color del texto */
+    margin: 0 100px; /* Margen en la parte inferior del párrafo */
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#nosotros h3{
+    text-align: justify-content;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 75px;
+    font-size: 1.5rem;
+}
+
+#nosotros .parrafo2{
+    font-size: 1.2rem; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea */
+    color: #333; /* Color del texto */
+    margin: 0 100px; /* Margen en la parte inferior del párrafo */
+    margin-bottom: 100px;
+    text-align: justify;
+
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------- PRODUCTOS Y CATEGORIAS */
+#menu-principal {
+    position:relative;
+}
+
+#sub-menu-productos {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1; /* Coloca el submenú sobre el contenido */
+    top: 100%; /* Ajusta la distancia desde la parte inferior del elemento padre */
+    left: 43%; /* Ajusta la distancia desde la izquierda del elemento padre */
+}
+
+#sub-menu-productos a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+#sub-menu-productos a:hover {
+    background-color: #f2f2f2; /* Color de fondo al pasar el ratón */
+}
+
+
+
+
+
+
+.formato_productos {
+    width: 300px; /* Ancho deseado del contenedor */
+    height: 300px; /* Altura automática */
+    margin-right: 10px; /* Espacio entre mosaicos */
+    margin-bottom: 20px; /* Espacio entre mosaicos */
+    float: left; /* Colocar el contenedor a la izquierda */
+    overflow: hidden; /* Ocultar cualquier contenido que desborde el contenedor */
+    position: relative; /* Establecer posición relativa para posicionar elementos internos */
+}
+
+.formato_productos img {
+    width: 100%; /* Asegurar que la imagen llene el contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegurar que la imagen sea un bloque */
+}
+
+.nombre-producto {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Fondo semi-transparente */
+    text-align: center; /* Centrar el texto horizontalmente */
+    padding: 5px;
+    box-sizing: border-box; /* Incluir el padding en el ancho del elemento */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

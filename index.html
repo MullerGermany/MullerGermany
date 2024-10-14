@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müller Germany</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header-menu">
+        <nav>
+            <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+            <a href="#" onclick="mostrarSeccion('nosotros')">Nosotros</a>
+            <a href="#" onclick="mostrarSeccion('productos')" class="menu-productos">Productos</a>
+            <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
+        </nav>
+
+        <!-- Submenú de categorías de productos -->
+        <!-- Submenú de categorías de productos -->
+        <nav id="sub-menu-productos" class="hidden">
+            <a href="#" data-categoria-id="categoria1">Generadores</a>
+            <a href="#" data-categoria-id="categoria2">Hidrolavadoras y Bombas</a>
+            <a href="#" data-categoria-id="categoria3">Inversoras</a>
+            <a href="#" data-categoria-id="categoria4">Demoledores</a>
+            <a href="#" data-categoria-id="categoria5">Motosierras</a>
+            <a href="#" data-categoria-id="categoria6">Rotomartillos y Taladros</a>
+            <a href="#" data-categoria-id="categoria7">Fumigadores</a>
+            <!-- Agrega más categorías según sea necesario -->
+        </nav>
+
+    </header>
+
+
+    <!--HERO IMAGE.......................................................-->
+    <div class="encabezado-img">
+    </div>
+
+    <!--SECCIONES .......................................................-->
+    <section id="inicio" class="seccion">
+        <!-- Contenido de la sección "Inicio" -->
+        <h2>¡Conoce nuestros productos!</h2>
+        <hr class="linea-divisora">
+
+        <!--CARRUSEL....................................-->
+        <div class="slider-frame">
+            <div class="slider-list">
+                <div class="slide"><img src="img/img_slider/Generador_003-Recuperado.jpg" alt=""></div>
+                <div class="slide"><img src="img/img_slider/Inversora_004.jpg" alt=""></div>
+                <div class="slide"><img src="img/img_slider/Percutor_002.jpg" alt=""></div>
+                <div class="slide"><img src="img/img_slider/Rotomartillo_001.jpg" alt=""></div>
+            </div>
+        </div>
+        <!-- DIVISION..............................................................................-->
+        <hr class="linea-divisora">
+
+        <h2 class="h2_inicio_des">
+            Nuestros Productos
+        </h2>
+
+        <p>¡Bienvenido a Müller Heavy Tools! Somos tu destino confiable para herramientas pesadas de importación. 
+            Con una selección cuidadosa de grúas, excavadoras y más, ofrecemos soluciones robustas y eficientes. 
+            Nuestra dedicación a la calidad y la durabilidad asegura que cada herramienta supere las expectativas. 
+            Colaboramos con fabricantes de renombre mundial para brindarte lo mejor en maquinaria pesada. 
+            Descubre cómo Müller Heavy Tools puede potenciar tu proyecto con herramientas de importación confiables y de alto rendimiento.</p>
+        
+    </section>
+
+
+    <section id="nosotros" class="seccion hidden">
+        <!-- Contenido de la sección "Nosotros" -->
+        
+            <!--CARRUSEL....................................-->
+            <hr class="linea-divisora">
+            <div class="slider-frame">
+                <div class="slider-list">
+                    <div class="slide"><img src="img/img_slider/Generador_003-Recuperado.jpg" alt=""></div>
+                    <div class="slide"><img src="img/img_slider/Inversora_004.jpg" alt=""></div>
+                    <div class="slide"><img src="img/img_slider/Percutor_002.jpg" alt=""></div>
+                    <div class="slide"><img src="img/img_slider/Rotomartillo_001.jpg" alt=""></div>
+                </div>
+            </div>
+            <!-- DIVISION..............................................................................-->
+            <hr class="linea-divisora">
+
+            <h2>Nosotros</h2>
+            <p class="parrafo1">
+                Somos una empresa nacional de elaboración y distribución de maquinaria ligera, agrícola y
+                de construcción, cumpliendo con los más altos estándares en precio/calidad  y 
+                accesibilidad para todos nuestros colaboradores.
+            </p>
+
+            <h3>Misión</h3>
+            <p class="parrafo2">
+                Somos una compañía enfocada en facilitar el trabajo agrícola y desarrollo de construcción, 
+                llevando a la mano de nuestros clientes, herramientas seguras, accesibles y fáciles de 
+                utilizar para una mejor elaboración en la mano de obra.
+            </p>
+
+            <h3>Visión</h3>
+            <p class="parrafo2">
+                Llevar Müller Germany a todos nuestros colaboradores, llegando a cada rincón dentro 
+                de la república mexicana, con el mejor costo posible.
+
+            </p>
+
+            <h3>Valores</h3>
+            <p class="parrafo2">
+                Trabajo en equipo, seguridad, compromiso y competitividad.
+            </p>
+
+
+    </section>
+
+
+
+    <section id="productos" class="seccion hidden">
+        <section id="categoria1" class="categoria hidden">
+
+
+
+            <div class="formato_productos">
+                <img src="img/productos/FOTOS_NUEVAS/Generador Portatil.png" alt="Generador 1" onclick="mostrarInformacion('generador1')">
+                <div class="nombre-producto">Mini Generador MG950iSM.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/Generador_001.jpg" alt="Generador 1" onclick="mostrarInformacion('generador2')">
+                <div class="nombre-producto">Generador Portatil de 900 Watts.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/GeneradorGde_001.jpg" alt="Generador 1" onclick="mostrarInformacion('generador3')">
+                <div class="nombre-producto">Generador Grande MG3800C.</div>
+            </div>
+
+
+
+        </section>
+
+        <section id="categoria2" class="categoria hidden">
+            <!-- Contenido de la categoría 2 -->
+            <div class="formato_productos">
+                <img src="img/productos/Hidro_001.jpg" alt="Generador 1" onclick="mostrarInformacion('generador1')">
+                <div class="nombre-producto">Hidrolavadora 180NB.</div>
+            </div>
+
+
+            <div class="formato_productos">
+                <img src="img/productos/FOTOS_NUEVAS/Bomba de Agua.png" alt="Generador 1" onclick="mostrarInformacion('generador1')">
+                <div class="nombre-producto">Vibrador de Concreto OHV.</div>
+            </div>
+
+        </section>
+
+        <section id="categoria3" class="categoria hidden">
+            <!-- Contenido de la categoría 3 -->
+            <div class="formato_productos">
+                <img src="img/productos/Inversora_001.jpg" alt="Generador 1" onclick="mostrarInformacion('generador1')">
+                <div class="nombre-producto">Inversora Azul ARC250.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/Inversora_004.jpg" alt="Generador 1" onclick="mostrarInformacion('generador1')">
+                <div class="nombre-producto">Inversora Roja ARC250.</div>
+            </div>
+        </section>
+
+        <section id="categoria4" class="categoria hidden">
+            <!-- Contenido de la categoría 4 -->
+            <div class="formato_productos">
+                <img src="img/productos/MartilloDemoledor_001.jpg" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Demoledor 25 kg 3066.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/FOTOS_NUEVAS/Martillo Demoledor Amarillo.png" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Demoledor 25 kg 3125.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/Perforador_001.jpg" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Demoledor 22 kg 95A.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/TaladroGde_002.jpg" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Demoledor 18 kg 3065.</div>
+            </div>
+
+        </section> 
+
+
+        <section id="categoria5" class="categoria hidden">
+            <!-- Contenido de la categoría 4 -->
+            <div class="formato_productos">
+                <img src="img/productos/Motosierra.jpg" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Motosierra CS5800-1.</div>
+            </div>
+        </section> 
+
+        
+        <section id="categoria6" class="categoria hidden">
+            <!-- Contenido de la categoría 4 -->
+
+            <div class="formato_productos">
+                <img src="img/productos/Rotomartillo_001.jpg" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Rotomartillo 5 kg TT26.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/FOTOS_NUEVAS/Martillo Demoledor Rojo.png" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Rotomartillo 8 kg TT32.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/Percutor_002.jpg" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Rotomartillo 8 kg TT32.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/FOTOS_NUEVAS/Martillo Demoledor Amarillo Grande.png" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Rotomartillo 8 kg 3016.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/Rotomartillo-Demoledor_002.jpg" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Rotomartillo 12 kg TT40.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/FOTOS_NUEVAS/Martillo Perforador Amarillo.png" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Rotomartillo 12 kg 3015.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/FOTOS_NUEVAS/RotoMartillo Grande.jpg" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Rotomartillo 12 kg 3015.</div>
+            </div>
+
+        </section> 
+
+        
+        <section id="categoria7" class="categoria hidden">
+            <!-- Contenido de la categoría 9 -->
+            <div class="formato_productos">
+                <img src="img/productos/FOTOS_NUEVAS/Pulverizador.png" alt="Martillo Demoledor 1" onclick="mostrarInformacion('martillo-demoledor1')">
+                <div class="nombre-producto">Fumigador GX-35.</div>
+            </div>
+        </section> 
+
+
+
+    </section>
+    
+
+
+
+    <section id="contacto" class="seccion hidden">
+        <!-- Contenido de la sección "Contacto" -->
+        <h1>actualizar 5</h1>
+    </section>
+
+
+
+    <!--OCULTAR SECCIONES.......................................................-->
+    <script>
+        function mostrarSeccion(id) {
+            // Oculta todas las secciones
+            var secciones = document.getElementsByClassName('seccion');
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.add('hidden');
+            }
+    
+            // Muestra la sección específica
+            var seccionMostrar = document.getElementById(id);
+            if (seccionMostrar) {
+                seccionMostrar.classList.remove('hidden');
+            }
+    
+            // Oculta el submenú de productos al cambiar de sección
+            var subMenu = document.getElementById('sub-menu-productos');
+            subMenu.style.display = 'none';
+        }
+    
+        // Muestra/oculta el submenú de productos
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu-productos');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    
+        // Asigna la función al clic del elemento "Productos"
+        document.getElementById('header-menu').getElementsByClassName('menu-productos')[0].addEventListener('click', toggleSubMenu);
+    
+        // Manejador de clics en el documento para ocultar el submenú
+        document.addEventListener('click', function(event) {
+            var subMenu = document.getElementById('sub-menu-productos');
+            var targetElement = event.target; // Elemento que recibió el clic
+    
+            // Verifica si el clic no está dentro del menú principal ni del submenú
+            if (!targetElement.closest('#header-menu') && !targetElement.closest('#sub-menu-productos')) {
+                subMenu.style.display = 'none';
+            }
+        });
+    
+        // Manejador de clics en el submenú para mostrar la categoría seleccionada
+        document.getElementById('sub-menu-productos').addEventListener('click', function(event) {
+            var targetCategoriaId = event.target.getAttribute('data-categoria-id');
+            if (targetCategoriaId) {
+                // Oculta todas las categorías
+                var categorias = document.querySelectorAll('.categoria');
+                categorias.forEach(function(categoria) {
+                    categoria.classList.add('hidden');
+                });
+    
+                // Muestra la categoría seleccionada
+                document.getElementById(targetCategoriaId).classList.remove('hidden');
+            }
+        });
+    </script>
+
+    
+
+</body>
+
+</html>
