@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müller Germany</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
+
+    <style>
+        .hidden {
+            display: none;
+        }
+        .hidden { display: none; } /* Clase para ocultar elementos */
+        .formato_productos img {
+            cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header-menu">
+        <nav>
+            <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+            <a href="#" onclick="mostrarSeccion('nosotros')">Nosotros</a>
+            <a href="#" onclick="mostrarSeccion('productos')" class="menu-productos">Productos</a>
+        </nav>
+    
+        <!-- Submenú de categorías de productos -->
+        <nav id="sub-menu-productos" class="hidden">
+            <a href="#" data-categoria-id="categoria1">Generadores</a>
+            <a href="#" data-categoria-id="categoria2">Hidrolavadoras y Bombas</a>
+            <a href="#" data-categoria-id="categoria3">Motosolsadoras e Inversoras</a>
+            <a href="#" data-categoria-id="categoria4">Rompedores</a>
+            <a href="#" data-categoria-id="categoria5">Rotomartillos</a>
+            <a href="#" data-categoria-id="categoria6">Herramienta Inalambrica</a>
+            <a href="#" data-categoria-id="categoria7">Desbrozadoras y Motosierras</a>
+            <a href="#" data-categoria-id="categoria8">Fumigadoras</a>
+            <a href="#" data-categoria-id="categoria9">Vibradores de Concreto</a>
+        </nav>
+    </header>
+    
+
+
+    <!--HERO IMAGE.......................................................-->
+    <div class="encabezado-img">
+    </div>
+
+    <!--SECCIONES .......................................................-->
+    <section id="inicio" class="seccion">
+        <!-- Contenido de la sección "Inicio" -->
+        <h2>¡Conoce nuestros productos!</h2>
+        <hr class="linea-divisora">
+
+        <!--CARRUSEL....................................-->
+        <div class="slider-frame">
+            <div class="slider-list">
+                <div class="slide"><img src="img/img_slider/ROMPEDOR.jpeg" alt=""></div>
+                <div class="slide"><img src="img/img_slider/ROTOMARTILLO.jpeg" alt=""></div>
+                <div class="slide"><img src="img/img_slider/MOTOSIERRA.jpeg" alt=""></div>
+                <div class="slide"><img src="img/img_slider/TALADRO.jpeg" alt=""></div>
+            </div>
+        </div>
+        <!-- DIVISION..............................................................................-->
+        <hr class="linea-divisora">
+
+        
+    </section>
+
+
+    <section id="nosotros" class="seccion hidden">
+        <!-- Contenido de la sección "Nosotros" -->
+        
+            <!--CARRUSEL....................................-->
+            <hr class="linea-divisora">
+            <div class="slider-frame">
+                <div class="slider-list">
+                    <div class="slide"><img src="img/img_slider/ROMPEDOR.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/img_slider/ROTOMARTILLO.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/img_slider/MOTOSIERRA.jpeg" alt=""></div>
+                    <div class="slide"><img src="img/img_slider/TALADRO.jpeg" alt=""></div>
+                </div>
+            </div>
+            <!-- DIVISION..............................................................................-->
+            <hr class="linea-divisora">
+
+            <h2>Nosotros</h2>
+            <p class="parrafo1">
+                Somos una empresa nacional de elaboración y distribución de maquinaria ligera, agrícola y
+                de construcción, cumpliendo con los más altos estándares en precio/calidad  y 
+                accesibilidad para todos nuestros colaboradores.
+            </p>
+
+            <h3>Misión</h3>
+            <p class="parrafo2">
+                Somos una compañía enfocada en facilitar el trabajo agrícola y desarrollo de construcción, 
+                llevando a la mano de nuestros clientes, herramientas seguras, accesibles y fáciles de 
+                utilizar para una mejor elaboración en la mano de obra.
+            </p>
+
+            <h3>Visión</h3>
+            <p class="parrafo2">
+                Llevar Müller Germany a todos nuestros colaboradores, llegando a cada rincón dentro 
+                de la república mexicana, con el mejor costo posible.
+
+            </p>
+
+            <h3>Valores</h3>
+            <p class="parrafo2">
+                Trabajo en equipo, seguridad, compromiso y competitividad.
+            </p>
+
+
+    </section>
+
+    <section id="productos" class="seccion hidden">
+
+        <!---------------------------------------------------------------------------------------------------- GENERADORES---------------------------------------->
+        <section id="categoria1" class="categoria">
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/GENERADORES/GENERADOR_AMARILLO_MG3500CA/IMG_1164.jpg" 
+                     alt="Generador1" 
+                     onclick="mostrarInformacion('generador1')">
+                <div class="nombre-producto">Generador Amarillo MG3500C</div>
+            </div>
+        
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/GENERADORES/GENERADOR_AMARILLO_MG3500CV/IMG_1182.jpg" alt="Generador2" onclick="mostrarInformacion('generador2')">
+                <div class="nombre-producto">Generador Verde MG3500C</div>
+            </div>
+        
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/GENERADORES/GENERADOR_ROJO_MG3500CR/IMG_1198.jpg" alt="Generador3" onclick="mostrarInformacion('generador3')">
+                <div class="nombre-producto">Generador Rojo MG3500C</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/GENERADORES/MINIGENERADOR/IMG_1123.jpg" alt="Generador4" onclick="mostrarInformacion('generador4')">
+                <div class="nombre-producto">Minigenerador</div>
+            </div>
+
+        </section>
+
+
+        <!---------------------------------------------------------------------------------------------------- HIDROS Y BOMBAS---------------------------------------->
+        <section id="categoria2" class="categoria hidden">
+            <!-- Contenido de la categoría 2 -->
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/HIDROLAVADORAS Y BOMBAS/HIDROLAVADORA_AMARILLA/IMG_1980.jpg" alt="Hidrolavadora1" onclick="mostrarInformacion('Hidrolavadora1')">
+                <div class="nombre-producto">Hidrolavadora Amarilla.</div>
+            </div>
+
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/HIDROLAVADORAS Y BOMBAS/HIDROLAVADORA_ROJA/IMG_2001.jpg" alt="Hidrolavadora2" onclick="mostrarInformacion('Hidrolavadora2')">
+                <div class="nombre-producto">Hidrolavadora Roja.</div>
+            </div>
+
+            
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/HIDROLAVADORAS Y BOMBAS/BOMBA_AGUA-WP30R/IMG_1141.jpg" alt="Bomba1" onclick="mostrarInformacion('Bomba1')">
+                <div class="nombre-producto">Bomba de Agua.</div>
+            </div>
+
+        </section>
+
+
+
+
+<!---------------------------------------------------------------------------------------------------- INVERSORAS Y MOTOSOLDADORAS ---------------------------------------->
+        <section id="categoria3" class="categoria hidden">
+            <!-- Contenido de la categoría 3 -->
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/MOTOSOLDADORAS E INVERSORAS/INVERSORA_MMA250A_A/IMG_0919.jpg" alt="Inversora1" onclick="mostrarInformacion('Inversora1')">
+                <div class="nombre-producto">Inversora Azul.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/MOTOSOLDADORAS E INVERSORAS/INVERSORA_MMA250A_R/IMG_0928.jpg" alt="Inversora2" onclick="mostrarInformacion('Inversora2')">
+                <div class="nombre-producto">Inversora Roja.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/MOTOSOLDADORAS E INVERSORAS/MOTOSOLDADORA_MG4000iW/IMG_1153.jpg" alt="Motosoldadora1" onclick="mostrarInformacion('Motosoldadora1')">
+                <div class="nombre-producto">Motosoldadora.</div>
+            </div>
+
+
+        </section>
+
+
+
+<!---------------------------------------------------------------------------------------------------- ROMPEDORES  ---------------------------------------->
+        <section id="categoria4" class="categoria hidden">
+            <!-- Contenido de la categoría 4 -->
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROMPEDORES/3061_PR/IMG_0805.jpg" alt="Rompedor1" onclick="mostrarInformacion('Rompedor1')">
+                <div class="nombre-producto">Rompedor 3061P Rojo.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROMPEDORES/3061_V/IMG_0830.jpg" alt="Rompedor2" onclick="mostrarInformacion('Rompedor2')">
+                <div class="nombre-producto">Rompedor 3061 Verde.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROMPEDORES/3061R/IMG_0891.jpg" alt="Rompedor3" onclick="mostrarInformacion('Rompedor3')">
+                <div class="nombre-producto">Rompedor 3061 Rojo.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROMPEDORES/3065_BLUE/IMG_0841.jpg" alt="Rompedor4" onclick="mostrarInformacion('Rompedor4')">
+                <div class="nombre-producto">Rompedor Azul 3065.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROMPEDORES/3065_R/IMG_0872.jpg" alt="Rompedor5" onclick="mostrarInformacion('Rompedor5')">
+                <div class="nombre-producto">Rompedor Rojo 3065.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROMPEDOREs/3125_A/IMG_0903.jpg" alt="Rompedor6" onclick="mostrarInformacion('Rompedor6')">
+                <div class="nombre-producto">Rompedor Amarillo 3125.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROMPEDOREs/3125_BLUE/IMG_0858.jpg" alt="Rompedor7" onclick="mostrarInformacion('Rompedor7')">
+                <div class="nombre-producto">Rompedor Azul 3125.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROMPEDORES/ROMPEDOR_GASOLINA95A/IMG_1221.jpg" alt="Rompedor8" onclick="mostrarInformacion('Rompedor8')">
+                <div class="nombre-producto">Rompedor a Gasolina 95A.</div>
+            </div>
+
+        </section> 
+
+<!---------------------------------------------------------------------------------------------------- ROTOMARTILLOS---------------------------------------->
+        <section id="categoria5" class="categoria hidden">
+            <!-- Contenido de la categoría 5 -->
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROTOMARTILLOS/ROTOMARTILLO_3015A/IMG_0991.jpg" alt="Rotomartillo1" onclick="mostrarInformacion('Rotomartillo1')">
+                <div class="nombre-producto">Rotomartillo 3015 Amarillo.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROTOMARTILLOS/ROTOMARTILLO_3015R/IMG_0950.jpg" alt="Rotomartillo2" onclick="mostrarInformacion('Rotomartillo2')">
+                <div class="nombre-producto">Rotomartillo 3015 Rojo.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROTOMARTILLOS/ROTOMARTILLO_3015V/IMG_0938.jpg" alt="Rotomartillo3" onclick="mostrarInformacion('Rotomartillo3')">
+                <div class="nombre-producto">Rotomartillo 3015 Verde.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROTOMARTILLOS/ROTOMARTILLO_3016A/IMG_0962.jpg" alt="Rotomartillo4" onclick="mostrarInformacion('Rotomartillo4')">
+                <div class="nombre-producto">Rotomartillo 3016 Amarillo.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/ROTOMARTILLOS/ROTOMARTILLO_3017A/IMG_0977.jpg" alt="Rotomartillo5" onclick="mostrarInformacion('Rotomartillo5')">
+                <div class="nombre-producto">Rotomartillo 3017 Amarillo.</div>
+            </div>
+
+
+        </section> 
+
+        <!---------------------------------------------------------------------------------------------------- INALAMBRICA ---------------------------------------->
+        <section id="categoria6" class="categoria hidden">
+            <!-- Contenido de la categoría 6 -->
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/HERRAMIENTAS INALAMBRICAS/KIT_2IN1_TOOLSET/IMG_1060.jpg" alt="Inalambrica1" onclick="mostrarInformacion('Inalambrica1')">
+                <div class="nombre-producto">Kit 2 en 1 Azul.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/HERRAMIENTAS INALAMBRICAS/KIT_2IN1_TOOLSET_AMARILLO/IMG_1030.jpg" alt="Inalambrica2" onclick="mostrarInformacion('Inalambrica2')">
+                <div class="nombre-producto">Kit 2 en 1 Amarillo.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/HERRAMIENTAS INALAMBRICAS/KIT_4IN1_TOOLSET_AMARILLO/IMG_1071.jpg" alt="Inalambrica3" onclick="mostrarInformacion('Inalambrica3')">
+                <div class="nombre-producto">Kit 4 en 1 Amarillo.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/HERRAMIENTAS INALAMBRICAS/KIT_4IN1_TOOLSET_AZUL/IMG_1083.jpg" alt="Inalambrica4" onclick="mostrarInformacion('Inalambrica4')">
+                <div class="nombre-producto">Kit 4 en 1 Azul.</div>
+            </div>
+
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/HERRAMIENTAS INALAMBRICAS/ROTOMARTILLO_INALA_XR/IMG_1041.jpg" alt="Inalambrica5" onclick="mostrarInformacion('Inalambrica5')">
+                <div class="nombre-producto">Rotomartillo Inalambrico.</div>
+            </div>
+
+        </section> 
+
+        <!---------------------------------------------------------------------------------------------------- DESBROZADORAS Y MOTOSIERRAS---------------------------------------->
+        <section id="categoria7" class="categoria hidden">
+            <!-- Contenido de la categoría 7 -->
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/DESBROSADORAS Y MOTOSIERRAS/MOTOSIERRA_CS5800_24/IMG_1089.jpg" alt="Motosierra1" onclick="mostrarInformacion('Motosierra1')">
+                <div class="nombre-producto">Motosierra 24".</div>
+            </div>
+        </section> 
+
+<!---------------------------------------------------------------------------------------------------- FUMIGADORAS---------------------------------------->
+        <section id="categoria8" class="categoria hidden">
+            <!-- Contenido de la categoría 8 -->
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/FUMIGADORAS/FUMIGADORA_GX35/IMG_1106.jpg" alt="Fumigadora1" onclick="mostrarInformacion('Fumigadora1')">
+                <div class="nombre-producto">Fumigador.</div>
+            </div>
+        </section> 
+<!---------------------------------------------------------------------------------------------------- VIBRADORES DE CONCRETO---------------------------------------->
+
+
+        <section id="categoria9" class="categoria hidden">
+            <!-- Contenido de la categoría 9 -->
+            <div class="formato_productos">
+                <img src="img/productos/CATALOGO NUEVO/VIBRADOR DE CONCRETO/VIBRADOR_CONCRETO/IMG_1127.jpg" alt="Vibrador1" onclick="mostrarInformacion('Vibrador1')">
+                <div class="nombre-producto">Vibrador de Concreto.</div>
+            </div>
+        </section> 
+
+
+
+    </section>
+
+
+<!-- Contenedor para detalles del producto -->
+<section id="detalle-producto" class="hidden">
+    <div id="detalle-imagen"></div>
+    <div id="miniaturas-producto"></div>
+
+    <h3 id="detalle-nombre"></h3>
+    <p id="detalle-modelo"></p> <!-- Nuevo campo: Modelo -->
+    <p id="detalle-precio"></p> <!-- Nuevo campo: Precio -->
+    <p id="detalle-descripcion"></p>
+    <ul id="detalle-caracteristicas"></ul>
+    <p id="detalle-info-adicional"></p> <!-- Nuevo campo: Información Adicional -->
+    <a id="link-compra" href="#" target="_blank">Link de Compra</a> <!-- Nuevo campo: Link de Compra -->
+    <button onclick="cerrarDetalle()">Volver</button>
+</section>
+
+
+    <!--OCULTAR SECCIONES.......................................................-->
+    <script>
+        function mostrarSeccion(id) {
+            // Oculta todas las secciones
+            var secciones = document.getElementsByClassName('seccion');
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].classList.add('hidden');
+            }
+    
+            // Muestra la sección específica
+            var seccionMostrar = document.getElementById(id);
+            if (seccionMostrar) {
+                seccionMostrar.classList.remove('hidden');
+            }
+    
+            // Oculta el submenú de productos al cambiar de sección
+            var subMenu = document.getElementById('sub-menu-productos');
+            subMenu.style.display = 'none';
+        }
+    
+        // Muestra/oculta el submenú de productos
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu-productos');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    
+        // Asigna la función al clic del elemento "Productos"
+        document.getElementById('header-menu').getElementsByClassName('menu-productos')[0].addEventListener('click', toggleSubMenu);
+    
+        // Manejador de clics en el documento para ocultar el submenú
+        document.addEventListener('click', function(event) {
+            var subMenu = document.getElementById('sub-menu-productos');
+            var targetElement = event.target; // Elemento que recibió el clic
+    
+            // Verifica si el clic no está dentro del menú principal ni del submenú
+            if (!targetElement.closest('#header-menu') && !targetElement.closest('#sub-menu-productos')) {
+                subMenu.style.display = 'none';
+            }
+        });
+    
+        // Manejador de clics en el submenú para mostrar la categoría seleccionada
+        document.getElementById('sub-menu-productos').addEventListener('click', function(event) {
+            var targetCategoriaId = event.target.getAttribute('data-categoria-id');
+            if (targetCategoriaId) {
+                // Oculta todas las categorías
+                var categorias = document.querySelectorAll('.categoria');
+                categorias.forEach(function(categoria) {
+                    categoria.classList.add('hidden');
+                });
+    
+                // Muestra la categoría seleccionada
+                document.getElementById(targetCategoriaId).classList.remove('hidden');
+            }
+        });
+
+        
+    </script>
+
+</body>
+
+</html>
